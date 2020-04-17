@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <display-name>PayrollManage</display-name>
+    <servlet>
+        <servlet-name>CreateEmployeeServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.CreateEmployeeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>EditPaySlipServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.EditPaySlipServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ExportPDFPaySlipServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.ExportPDFPaySlipServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ExportPaySlipServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.ExportPaySlipServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ExportEmployeeServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.ExportEmployeeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ShowAllPaySlipServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.ShowAllPaySlipServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeletePaySlipServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.DeletePaySlipServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CreatePaySlipServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.CreatePaySlipServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LogOnServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ShowAllEmployeeServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.ShowAllEmployeeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.DeleteEmployeeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DisplayOrganisationServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.DisplayOrganisationServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>EditEmployeeServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.EditEmployeeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>au.cgs.payroll.servlet.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreateEmployeeServlet</servlet-name>
+        <url-pattern>/new_employee</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ShowAllEmployeeServlet</servlet-name>
+        <url-pattern>/show_employee</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <url-pattern>/delete_employee</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>EditEmployeeServlet</servlet-name>
+        <url-pattern>/update_employee</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DisplayOrganisationServlet</servlet-name>
+        <url-pattern>/display_organisation</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ShowAllPaySlipServlet</servlet-name>
+        <url-pattern>/show_payslip</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CreatePaySlipServlet</servlet-name>
+        <url-pattern>/new_payslip</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeletePaySlipServlet</servlet-name>
+        <url-pattern>/delete_payslip</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>EditPaySlipServlet</servlet-name>
+        <url-pattern>/update_payslip</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ExportEmployeeServlet</servlet-name>
+        <url-pattern>/export_employee</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ExportPaySlipServlet</servlet-name>
+        <url-pattern>/export_payslip</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ExportPDFPaySlipServlet</servlet-name>
+        <url-pattern>/export_pdf_payslip</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogOnServlet</servlet-name>
+        <url-pattern>/log_on</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
